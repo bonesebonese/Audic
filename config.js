@@ -48,11 +48,14 @@ module.exports = {
         loopOff: ''
     },
     lavalink: {
-        const nodes = [{
-  host: 'lava-v3.ajieblogs.eu.org',
-  port: 80,
-  password: 'https://dsc.gg/ajidevserver',
-  secure: false,
+        nodes: [
+            {
+                name: 'Main',
+                url: 'lavalink.jirayu.net:13592',
+                auth: 'youshallnotpass',
+                secure: false,
+                retryAmount: 5,
+                retryDelay: 3000
             }
         ]
     }
