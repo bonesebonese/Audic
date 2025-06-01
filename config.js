@@ -1,7 +1,17 @@
 require('dotenv').config();
+const { Client, GatewayIntentBits, REST, Routes, SlashCommandBuilder, EmbedBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle, ActivityType, StringSelectMenuBuilder } = require('discord.js');
+
 const express = require('express');
 const app = express();
 const port = 3000;
+
+app.get('/', (req, res) => {
+  res.send('Discord Music Bot is running!');
+});
+
+app.listen(port, '0.0.0.0', () => {
+  console.log(`Express server running on port ${port}`);
+});
 
 module.exports = {
     botName: 'Audic',
