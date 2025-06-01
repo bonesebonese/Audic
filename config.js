@@ -50,9 +50,10 @@ module.exports = {
     lavalink: {
         nodes: [
             {
-                name: 'Main',
-                url: 'lavalink.jirayu.net:13592',
-                auth: 'youshallnotpass',
+                name: 'Amane',
+                url: 'lava-v3.ajieblogs.eu.org',
+                auth: 'https://dsc.gg/ajidevserver',
+                port: 80,
                 secure: false,
                 retryAmount: 5,
                 retryDelay: 3000
